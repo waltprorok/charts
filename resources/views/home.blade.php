@@ -8,6 +8,7 @@
                     <div class="panel-heading">Dashboard</div>
                     <div class="panel-body">
                         <add-product-component></add-product-component>
+                        <chart-component></chart-component>
                     </div>
                 </div>
             </div>
