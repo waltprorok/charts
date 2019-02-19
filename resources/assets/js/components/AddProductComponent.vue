@@ -4,7 +4,6 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">Example Component</div>
-
                     <div class="panel-body">
                         <form @submit.prevent="createProduct">
                             <div class="form-group">
@@ -23,7 +22,6 @@
                                 <button class="btn btn-primary">Create Product</button>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
@@ -34,10 +32,10 @@
 <script>
     export default {
 
-        data(){
-          return {
-              product: {}
-          }
+        data() {
+            return {
+                product: {}
+            }
         },
 
         mounted() {
@@ -47,13 +45,10 @@
         methods: {
             createProduct() {
                 let uri = 'http://127.0.0.1:8000/products';
-
-                axios.post(uri, this.product).then((response)=>{
+                axios.post(uri, this.product).then((response) => {
                     window.location.reload();
                 });
-
             }
         }
-
     }
 </script>
