@@ -65755,8 +65755,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -65772,13 +65770,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         createProduct: function createProduct() {
             var uri = 'http://127.0.0.1:8000/products';
-
             axios.post(uri, this.product).then(function (response) {
                 window.location.reload();
             });
         }
     }
-
 });
 
 /***/ }),
@@ -65976,10 +65972,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["a" /* Line */],
-
+    extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["a" /* Bar */],
     data: function data() {
-
         return {
             url: 'http://127.0.0.1:8000/products',
             years: [],
@@ -65988,7 +65982,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             data: ''
         };
     },
-
 
     methods: {
         getProducts: function getProducts() {
@@ -66010,9 +66003,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         labels: _this.years,
                         datasets: [{
                             label: 'Sales',
+<<<<<<< HEAD
                             backgroundColor: '#5c4ef8',
+=======
+                            backgroundColor: '#413EF8',
+>>>>>>> f920392eddb57d65fdd864f270613aef2d8f7d5d
                             data: _this.prices
-
                         }]
                     }, { responsive: true, maintainAspectRatio: false });
                 } else {
@@ -66035,10 +66031,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* unused harmony export VueCharts */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_index_js__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BaseCharts__ = __webpack_require__(194);
-/* unused harmony reexport Bar */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__BaseCharts__["a"]; });
 /* unused harmony reexport HorizontalBar */
 /* unused harmony reexport Doughnut */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__BaseCharts__["e"]; });
+/* unused harmony reexport Line */
 /* unused harmony reexport Pie */
 /* unused harmony reexport PolarArea */
 /* unused harmony reexport Radar */

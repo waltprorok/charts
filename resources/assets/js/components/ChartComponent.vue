@@ -1,12 +1,10 @@
 <script>
 
-    import {Line} from 'vue-chartjs';
+    import {Bar} from 'vue-chartjs';
 
     export default {
-        extends: Line,
-
+        extends: Bar,
         data() {
-
             return {
                 url: 'http://127.0.0.1:8000/products',
                 years: [],
@@ -14,12 +12,8 @@
                 prices: [],
                 data: ''
             }
-
         },
-
-
         methods: {
-
             getProducts() {
                 axios.get(this.url).then((response) => {
                     console.log(response.data);
@@ -38,7 +32,7 @@
                             datasets: [
                                 {
                                     label: 'Sales',
-                                    backgroundColor: '#5c4ef8',
+                                    backgroundColor: '#413EF8',
                                     data: this.prices,
                                 }
                             ]
@@ -47,13 +41,9 @@
                     } else {
                         console.log("No Data");
                     }
-
-
                 });
             }
-
         },
-
 
         mounted() {
             this.getProducts();
