@@ -66010,7 +66010,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         labels: _this.years,
                         datasets: [{
                             label: 'Sales',
-                            backgroundColor: '#f87979',
+                            backgroundColor: '#5c4ef8',
                             data: _this.prices
 
                         }]

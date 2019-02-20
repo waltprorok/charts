@@ -38,9 +38,8 @@
                             datasets: [
                                 {
                                     label: 'Sales',
-                                    backgroundColor: '#f87979',
+                                    backgroundColor: '#5c4ef8',
                                     data: this.prices,
-
                                 }
                             ]
                         }, {responsive: true, maintainAspectRatio: false})
