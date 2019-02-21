@@ -19,7 +19,7 @@
                                 <input v-model="product.price" type="number" id="price" class="form-control">
                             </div>
                             <div class="form-group">
-                                <button class="btn btn-primary">Create Product</button>
+                                <button class="btn btn-default">Create Product</button>
                             </div>
                         </form>
                     </div>

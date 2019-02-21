@@ -65898,7 +65898,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "form-group" }, [
-      _c("button", { staticClass: "btn btn-primary" }, [
+      _c("button", { staticClass: "btn btn-default" }, [
         _vm._v("Create Product")
       ])
     ])
@@ -66003,14 +66003,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         labels: _this.years,
                         datasets: [{
                             label: 'Sales',
-<<<<<<< HEAD
-                            backgroundColor: '#5c4ef8',
-=======
                             backgroundColor: '#413EF8',
->>>>>>> f920392eddb57d65fdd864f270613aef2d8f7d5d
                             data: _this.prices
                         }]
-                    }, { responsive: true, maintainAspectRatio: false });
+                    }, {
+                        responsive: true,
+                        maintainAspectRatio: false
+                    });
                 } else {
                     console.log("No Data");
                 }

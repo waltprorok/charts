@@ -36,7 +36,10 @@
                                     data: this.prices,
                                 }
                             ]
-                        }, {responsive: true, maintainAspectRatio: false})
+                        }, {
+                            responsive: true,
+                            maintainAspectRatio: false
+                        })
 
                     } else {
                         console.log("No Data");
