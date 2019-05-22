@@ -1,9 +1,9 @@
 <script>
 
-    import {Bar} from 'vue-chartjs';
+    import { Line } from 'vue-chartjs';
 
     export default {
-        extends: Bar,
+        extends: Line,
         data() {
             return {
                 url: 'http://127.0.0.1:8000/products',
