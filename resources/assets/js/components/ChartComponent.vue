@@ -1,6 +1,6 @@
 <script>
 
-    import { Bar } from 'vue-chartjs';
+    import {Bar} from 'vue-chartjs';
 
     export default {
         extends: Bar,
@@ -32,7 +32,7 @@
                             datasets: [
                                 {
                                     label: 'Sales',
-                                    backgroundColor: '#4277f8',
+                                    backgroundColor: '#413af8',
                                     data: this.prices,
                                 }
                             ]
