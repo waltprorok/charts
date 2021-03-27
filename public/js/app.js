@@ -66141,54 +66141,54 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["a" /* Bar */],
-    data: function data() {
-        return {
-            url: 'http://127.0.0.1:8000/products',
-            years: [],
-            names: [],
-            prices: [],
-            data: ''
-        };
-    },
+  extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["a" /* Line */],
+  data: function data() {
+    return {
+      url: 'http://127.0.0.1:8000/products',
+      years: [],
+      names: [],
+      prices: [],
+      data: ''
+    };
+  },
 
-    methods: {
-        getProducts: function getProducts() {
-            var _this = this;
+  methods: {
+    getProducts: function getProducts() {
+      var _this = this;
 
-            axios.get(this.url).then(function (response) {
-                console.log(response.data);
+      axios.get(this.url).then(function (response) {
+        console.log(response.data);
 
-                _this.data = response.data;
+        _this.data = response.data;
 
-                if (_this.data) {
-                    _this.data.forEach(function (element) {
-                        _this.years.push(element.year);
-                        _this.names.push(element.name);
-                        _this.prices.push(element.price);
-                    });
+        if (_this.data) {
+          _this.data.forEach(function (element) {
+            _this.years.push(element.year);
+            _this.names.push(element.name);
+            _this.prices.push(element.price);
+          });
 
-                    _this.renderChart({
-                        labels: _this.years,
-                        datasets: [{
-                            label: 'Sales',
-                            backgroundColor: '#413af8',
-                            data: _this.prices
-                        }]
-                    }, {
-                        responsive: true,
-                        maintainAspectRatio: false
-                    });
-                } else {
-                    console.log("No Data");
-                }
-            });
+          _this.renderChart({
+            labels: _this.years,
+            datasets: [{
+              label: 'Sales',
+              backgroundColor: '#0c28db',
+              data: _this.prices
+            }]
+          }, {
+            responsive: true,
+            maintainAspectRatio: false
+          });
+        } else {
+          console.log("No Data");
         }
-    },
-
-    mounted: function mounted() {
-        this.getProducts();
+      });
     }
+  },
+
+  mounted: function mounted() {
+    this.getProducts();
+  }
 });
 
 /***/ }),
@@ -66199,10 +66199,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* unused harmony export VueCharts */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_index_js__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BaseCharts__ = __webpack_require__(186);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__BaseCharts__["a"]; });
+/* unused harmony reexport Bar */
 /* unused harmony reexport HorizontalBar */
 /* unused harmony reexport Doughnut */
-/* unused harmony reexport Line */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__BaseCharts__["e"]; });
 /* unused harmony reexport Pie */
 /* unused harmony reexport PolarArea */
 /* unused harmony reexport Radar */
